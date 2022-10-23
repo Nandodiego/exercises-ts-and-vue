@@ -8,12 +8,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Emit } from 'vue-property-decorator'
+import { Component, Vue, Emit } from 'vue-property-decorator';
 
 @Component({
     name: 'buttons-component'
 })
-
 export default class ButtonsComponent extends Vue {
 
     @Emit('show-values')

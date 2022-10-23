@@ -29,8 +29,7 @@
 
 import ValuesComponent from '@/components/ShowValues/ValuesComponent.vue';
 import ButtonsComponent from '@/components/ShowValues/ButtonsComponent.vue';
-import { Component, Vue } from 'vue-property-decorator';
-
+import { Component, Vue  } from 'vue-property-decorator';
 @Component({
     name: 'form-vue',
     components: {
@@ -38,7 +37,6 @@ import { Component, Vue } from 'vue-property-decorator';
        ValuesComponent
     }
 })
-
 export default class FormComponent extends Vue {
     public canShow = false
     public showCurrentsValues = false;
@@ -50,7 +48,7 @@ export default class FormComponent extends Vue {
     public arrayValues: string[] = [];
 
 
-    addValue(data:string): void {    
+    addValue(data:string): void { 
         if(data){
             this.showCurrentsValues = true
             this.arrayValues.push(data);
