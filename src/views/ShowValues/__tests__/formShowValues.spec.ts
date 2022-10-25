@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
-import FormView from "../../ShowValues/FormView.vue";
-import { getWrapperProps } from "@/utils/tests.helper";
+import FormView from "../FormView.vue";
+import { getWrapperProps } from "../../../utils/tests.helper";
 
 const options = getWrapperProps({
     propsData: {

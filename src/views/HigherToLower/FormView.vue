@@ -62,11 +62,7 @@ export default class FormComponent extends Vue {
             this.errorValue = "Enter a value";
         }
     }
-
-    hi(): void{
-        console.log('hi')
-    }
-
+    
     hideValues(state: boolean): void{
         this.canShow = !state
     }

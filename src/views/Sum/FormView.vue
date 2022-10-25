@@ -51,9 +51,6 @@ export default class FormComponent extends Vue {
                 this.arrayValues.push(conversion);
                 this.sumResult = this.sumNumbers(this.arrayValues);
                 this.inputValue = "";
-            }else{
-                this.arrayValues = [];
-                this.canShow = true;
             }
         }else{
             this.canShow = true;

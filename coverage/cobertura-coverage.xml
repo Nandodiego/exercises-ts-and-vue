@@ -1,52 +1,52 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="78" lines-covered="17" line-rate="0.21789999999999998" branches-valid="0" branches-covered="0" branch-rate="1" timestamp="1666485787878" complexity="0" version="0.1">
+<coverage lines-valid="78" lines-covered="66" line-rate="0.8461" branches-valid="0" branches-covered="0" branch-rate="1" timestamp="1666718111942" complexity="0" version="0.1">
   <sources>
-    <source>C:\Users\GAMER\Desktop\Work\algo\vue-ts\exercises-ts-and-vue</source>
+    <source>C:\Users\colec\Desktop\Proyectos\project-ts\exercises-ts-and-vue</source>
   </sources>
   <packages>
-    <package name="bookshopButton" line-rate="0" branch-rate="1">
+    <package name="bookshopButton" line-rate="1" branch-rate="1">
       <classes>
-        <class name="Button.vue" filename="src\bookshopButton\Button.vue" line-rate="0" branch-rate="1">
+        <class name="Button.vue" filename="src\bookshopButton\Button.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="10" hits="0" branch="false"/>
-            <line number="17" hits="0" branch="false"/>
-            <line number="24" hits="0" branch="false"/>
+            <line number="10" hits="6" branch="false"/>
+            <line number="17" hits="6" branch="false"/>
+            <line number="24" hits="6" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="components.HigherToLower" line-rate="0" branch-rate="1">
+    <package name="components.HigherToLower" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ValuesComponent.vue" filename="src\components\HigherToLower\ValuesComponent.vue" line-rate="0" branch-rate="1">
+        <class name="ValuesComponent.vue" filename="src\components\HigherToLower\ValuesComponent.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="21" hits="0" branch="false"/>
-            <line number="28" hits="0" branch="false"/>
-            <line number="29" hits="0" branch="false"/>
-            <line number="30" hits="0" branch="false"/>
-            <line number="31" hits="0" branch="false"/>
-            <line number="34" hits="0" branch="false"/>
-            <line number="37" hits="0" branch="false"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="28" hits="2" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
+            <line number="30" hits="2" branch="false"/>
+            <line number="31" hits="2" branch="false"/>
+            <line number="34" hits="2" branch="false"/>
+            <line number="37" hits="2" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="components.Palindromes" line-rate="0" branch-rate="1">
+    <package name="components.Palindromes" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ValuesComponent.vue" filename="src\components\Palindromes\ValuesComponent.vue" line-rate="0" branch-rate="1">
+        <class name="ValuesComponent.vue" filename="src\components\Palindromes\ValuesComponent.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="15" hits="0" branch="false"/>
-            <line number="22" hits="0" branch="false"/>
-            <line number="23" hits="0" branch="false"/>
-            <line number="24" hits="0" branch="false"/>
-            <line number="27" hits="0" branch="false"/>
-            <line number="31" hits="0" branch="false"/>
+            <line number="15" hits="2" branch="false"/>
+            <line number="22" hits="2" branch="false"/>
+            <line number="23" hits="2" branch="false"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="31" hits="2" branch="false"/>
           </lines>
         </class>
       </classes>
@@ -57,66 +57,66 @@
           <methods>
           </methods>
           <lines>
-            <line number="11" hits="1" branch="false"/>
-            <line number="19" hits="1" branch="false"/>
-            <line number="24" hits="1" branch="false"/>
-            <line number="27" hits="1" branch="false"/>
+            <line number="11" hits="3" branch="false"/>
+            <line number="19" hits="3" branch="false"/>
+            <line number="24" hits="3" branch="false"/>
+            <line number="27" hits="3" branch="false"/>
           </lines>
         </class>
         <class name="ValuesComponent.vue" filename="src\components\ShowValues\ValuesComponent.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="21" hits="1" branch="false"/>
-            <line number="28" hits="1" branch="false"/>
-            <line number="29" hits="1" branch="false"/>
-            <line number="30" hits="1" branch="false"/>
-            <line number="31" hits="1" branch="false"/>
-            <line number="34" hits="1" branch="false"/>
-            <line number="37" hits="1" branch="false"/>
+            <line number="21" hits="3" branch="false"/>
+            <line number="28" hits="3" branch="false"/>
+            <line number="29" hits="3" branch="false"/>
+            <line number="30" hits="3" branch="false"/>
+            <line number="31" hits="3" branch="false"/>
+            <line number="34" hits="3" branch="false"/>
+            <line number="37" hits="3" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="components.Sum" line-rate="0" branch-rate="1">
+    <package name="components.Sum" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ValuesComponent.vue" filename="src\components\Sum\ValuesComponent.vue" line-rate="0" branch-rate="1">
+        <class name="ValuesComponent.vue" filename="src\components\Sum\ValuesComponent.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="18" hits="0" branch="false"/>
-            <line number="25" hits="0" branch="false"/>
-            <line number="26" hits="0" branch="false"/>
-            <line number="29" hits="0" branch="false"/>
-            <line number="32" hits="0" branch="false"/>
+            <line number="18" hits="2" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
+            <line number="32" hits="2" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="components.SumNumericValues" line-rate="0" branch-rate="1">
+    <package name="components.SumNumericValues" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ButtonsComponent.vue" filename="src\components\SumNumericValues\ButtonsComponent.vue" line-rate="0" branch-rate="1">
+        <class name="ButtonsComponent.vue" filename="src\components\SumNumericValues\ButtonsComponent.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="11" hits="0" branch="false"/>
-            <line number="20" hits="0" branch="false"/>
-            <line number="25" hits="0" branch="false"/>
-            <line number="28" hits="0" branch="false"/>
+            <line number="11" hits="3" branch="false"/>
+            <line number="20" hits="3" branch="false"/>
+            <line number="25" hits="3" branch="false"/>
+            <line number="28" hits="3" branch="false"/>
           </lines>
         </class>
-        <class name="ValuesComponent.vue" filename="src\components\SumNumericValues\ValuesComponent.vue" line-rate="0" branch-rate="1">
+        <class name="ValuesComponent.vue" filename="src\components\SumNumericValues\ValuesComponent.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="22" hits="0" branch="false"/>
-            <line number="29" hits="0" branch="false"/>
-            <line number="30" hits="0" branch="false"/>
-            <line number="31" hits="0" branch="false"/>
-            <line number="32" hits="0" branch="false"/>
-            <line number="35" hits="0" branch="false"/>
-            <line number="38" hits="0" branch="false"/>
-            <line number="41" hits="0" branch="false"/>
+            <line number="22" hits="3" branch="false"/>
+            <line number="29" hits="3" branch="false"/>
+            <line number="30" hits="3" branch="false"/>
+            <line number="31" hits="3" branch="false"/>
+            <line number="32" hits="3" branch="false"/>
+            <line number="35" hits="3" branch="false"/>
+            <line number="38" hits="3" branch="false"/>
+            <line number="41" hits="3" branch="false"/>
           </lines>
         </class>
       </classes>
@@ -146,9 +146,9 @@
       <classes>
         <class name="tests.helper.ts" filename="src\utils\tests.helper.ts" line-rate="0.6666" branch-rate="1">
           <methods>
-            <method name="getWrapperProps" hits="1" signature="()V">
+            <method name="getWrapperProps" hits="10" signature="()V">
               <lines>
-                <line number="3" hits="1"/>
+                <line number="3" hits="10"/>
               </lines>
             </method>
             <method name="(anonymous_1)" hits="0" signature="()V">
@@ -158,37 +158,37 @@
             </method>
           </methods>
           <lines>
-            <line number="3" hits="1" branch="false"/>
-            <line number="4" hits="1" branch="false"/>
+            <line number="3" hits="10" branch="false"/>
+            <line number="4" hits="10" branch="false"/>
             <line number="7" hits="0" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="views.HigherToLower" line-rate="0" branch-rate="1">
+    <package name="views.HigherToLower" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\HigherToLower\FormView.vue" line-rate="0" branch-rate="1">
+        <class name="FormView.vue" filename="src\views\HigherToLower\FormView.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="27" hits="0" branch="false"/>
-            <line number="28" hits="0" branch="false"/>
-            <line number="29" hits="0" branch="false"/>
-            <line number="73" hits="0" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="28" hits="2" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
+            <line number="69" hits="2" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="views.Palindromes" line-rate="0" branch-rate="1">
+    <package name="views.Palindromes" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\Palindromes\FormView.vue" line-rate="0" branch-rate="1">
+        <class name="FormView.vue" filename="src\views\Palindromes\FormView.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="24" hits="0" branch="false"/>
-            <line number="25" hits="0" branch="false"/>
-            <line number="26" hits="0" branch="false"/>
-            <line number="62" hits="0" branch="false"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+            <line number="62" hits="2" branch="false"/>
           </lines>
         </class>
       </classes>
@@ -199,38 +199,38 @@
           <methods>
           </methods>
           <lines>
-            <line number="30" hits="1" branch="false"/>
-            <line number="31" hits="1" branch="false"/>
-            <line number="32" hits="1" branch="false"/>
-            <line number="82" hits="1" branch="false"/>
+            <line number="30" hits="3" branch="false"/>
+            <line number="31" hits="3" branch="false"/>
+            <line number="32" hits="3" branch="false"/>
+            <line number="82" hits="3" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="views.Sum" line-rate="0" branch-rate="1">
+    <package name="views.Sum" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\Sum\FormView.vue" line-rate="0" branch-rate="1">
+        <class name="FormView.vue" filename="src\views\Sum\FormView.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="25" hits="0" branch="false"/>
-            <line number="26" hits="0" branch="false"/>
-            <line number="27" hits="0" branch="false"/>
-            <line number="71" hits="0" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="68" hits="2" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="views.SumNumericValues" line-rate="0" branch-rate="1">
+    <package name="views.SumNumericValues" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\SumNumericValues\FormView.vue" line-rate="0" branch-rate="1">
+        <class name="FormView.vue" filename="src\views\SumNumericValues\FormView.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
-            <line number="31" hits="0" branch="false"/>
-            <line number="32" hits="0" branch="false"/>
-            <line number="33" hits="0" branch="false"/>
-            <line number="111" hits="0" branch="false"/>
+            <line number="31" hits="3" branch="false"/>
+            <line number="32" hits="3" branch="false"/>
+            <line number="33" hits="3" branch="false"/>
+            <line number="111" hits="3" branch="false"/>
           </lines>
         </class>
       </classes>
