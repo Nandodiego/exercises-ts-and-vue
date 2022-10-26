@@ -1,7 +1,7 @@
 import { shallowMount } from "@vue/test-utils";
 import { getWrapperProps } from "../../../utils/tests.helper";
-import ValuesComponent from '../ValuesComponent.vue';
-import FormPalindrome from '../../../views/Palindromes/FormView.vue';
+import ValuesComponent from '../PalindromeValues.vue';
+import FormPalindrome from '../../../views/Palindromes/PalindromesForm.vue';
 
 
 const options = getWrapperProps({
@@ -17,7 +17,9 @@ describe("HigherToLower values SUT", () => {
 
     beforeEach(() => { 
         wrapper = shallowMount(ValuesComponent, {
-            components: FormPalindrome,
+            components: {
+                FormPalindrome
+            },
             ...options
         })
     });

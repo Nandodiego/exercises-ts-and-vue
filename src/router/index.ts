@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import ShowValuesView from '@/views/ShowValues/FormView.vue';
-import HigherToLowerView from '@/views/HigherToLower/FormView.vue';
-import Palindromes from '@/views/Palindromes/FormView.vue';
-import SumView from '@/views/Sum/FormView.vue';
-import SumNumericValuesView from '@/views/SumNumericValues/FormView.vue'; 
+import ShowValuesView from '@/views/ShowValues/ShowValuesForm.vue';
+import HigherToLowerView from '@/views/HigherToLower/HigherToLowerForm.vue';
+import Palindromes from '@/views/Palindromes/PalindromesForm.vue';
+import SumView from '@/views/Sum/SumForm.vue';
+import SumNumericValuesView from '@/views/SumNumericValues/SumNumbersForm.vue'; 
 
 Vue.use(VueRouter);
 

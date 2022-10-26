@@ -28,8 +28,8 @@
 
 <script lang="ts">
 
-import ValuesComponent from '@/components/SumNumericValues/ValuesComponent.vue';
-import ButtonsComponent from '@/components/SumNumericValues/ButtonsComponent.vue';
+import ValuesComponent from '@/components/SumNumericValues/SumNumbersValues.vue';
+import ButtonsComponent from '@/components/SumNumericValues/SumNumbersButtons.vue';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({

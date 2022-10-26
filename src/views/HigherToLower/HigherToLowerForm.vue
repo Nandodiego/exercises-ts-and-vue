@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form class="form" @submit.prevent="addValue(inputValue)">
+        <form class="form"  @submit.prevent="addValue(inputValue)">
             <div>
                 <h1 class="form__title">Too easy</h1>
             </div>
@@ -12,7 +12,9 @@
             <div v-if="canShow">
                 <ValuesComponent
                     :showCurrentsValues="showCurrentsValues"
-                    :sumResult="sumResult"
+                    :arrayValues="arrayValues"
+                    :showError="showError"
+                    :errorValue="errorValue"
                     @hide-values="hideValues(canShow)"
                 />
             </div>
@@ -22,7 +24,7 @@
 
 <script lang="ts">
 
-import ValuesComponent from '@/components/Sum/ValuesComponent.vue';
+import ValuesComponent from '@/components/HigherToLower/HigherToLowerValues.vue';
 import ButtonsComponent from '@/bookshopButton/Button.vue';
 import { Component, Vue } from 'vue-property-decorator';
 
@@ -36,40 +38,39 @@ import { Component, Vue } from 'vue-property-decorator';
 
 export default class FormComponent extends Vue {
     public canShow = false
-    public inputValue = "";
     public showCurrentsValues = false;
-    public arrayValues: number[] = [];
-    public sumResult = 0;
+    public showError = false;
 
-    addValue(data:string): void { 
+    public inputValue = "";
+    public errorValue = "";
+
+    public arrayValues: string[] = [];
+
+    addValue(data:string): void {    
         if(data){
-            let conversion = parseInt(data);
-            this.showCurrentsValues = true;
-
-            if(!isNaN(conversion)){
-                this.canShow = true;
-                this.arrayValues.push(conversion);
-                this.sumResult = this.sumNumbers(this.arrayValues);
-                this.inputValue = "";
-            }
-        }else{
+            this.showCurrentsValues = true
             this.canShow = true;
+            this.arrayValues.push(data);
+            this.arrayValues.sort((a:any, b:any) => b - a );
+            this.inputValue = ""
+            this.showError = false;
+        }else{
             this.showCurrentsValues = false;
+            this.canShow = true;
+            this.arrayValues = [];
+            this.showError = true;
+            this.errorValue = "Enter a value";
         }
     }
-
-    sumNumbers(arrayNumbers: number[]): number {
-        return arrayNumbers.reduce((a, b) => a + b);
-    }
-
+    
     hideValues(state: boolean): void{
-        this.canShow = !state;
+        this.canShow = !state
     }
 }
 </script>
 
 
-<style>
+<style scoped>
     .form{
         padding: 32px;
         width: 400px;

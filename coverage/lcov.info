@@ -2,16 +2,16 @@ TN:
 SF:src\bookshopButton\Button.vue
 FNF:0
 FNH:0
-DA:10,6
-DA:17,6
-DA:24,6
+DA:10,7
+DA:17,7
+DA:24,7
 LF:3
 LH:3
 BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\HigherToLower\ValuesComponent.vue
+SF:src\components\HigherToLower\HigherToLowerValues.vue
 FNF:0
 FNH:0
 DA:21,2
@@ -27,7 +27,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\Palindromes\ValuesComponent.vue
+SF:src\components\Palindromes\PalindromeValues.vue
 FNF:0
 FNH:0
 DA:15,2
@@ -42,7 +42,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\ShowValues\ButtonsComponent.vue
+SF:src\components\ShowValues\ShowValuesButtons.vue
 FNF:0
 FNH:0
 DA:11,3
@@ -55,7 +55,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\ShowValues\ValuesComponent.vue
+SF:src\components\ShowValues\ValuesShowValues.vue
 FNF:0
 FNH:0
 DA:21,3
@@ -71,7 +71,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\Sum\ValuesComponent.vue
+SF:src\components\Sum\SumValues.vue
 FNF:0
 FNH:0
 DA:18,2
@@ -85,7 +85,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\SumNumericValues\ButtonsComponent.vue
+SF:src\components\SumNumericValues\SumNumbersButtons.vue
 FNF:0
 FNH:0
 DA:11,3
@@ -98,7 +98,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\components\SumNumericValues\ValuesComponent.vue
+SF:src\components\SumNumericValues\SumNumbersValues.vue
 FNF:0
 FNH:0
 DA:22,3
@@ -140,10 +140,10 @@ FN:3,getWrapperProps
 FN:7,(anonymous_1)
 FNF:2
 FNH:1
-FNDA:10,getWrapperProps
+FNDA:11,getWrapperProps
 FNDA:0,(anonymous_1)
-DA:3,10
-DA:4,10
+DA:3,11
+DA:4,11
 DA:7,0
 LF:3
 LH:2
@@ -151,7 +151,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\views\HigherToLower\FormView.vue
+SF:src\views\HigherToLower\HigherToLowerForm.vue
 FNF:0
 FNH:0
 DA:27,2
@@ -164,7 +164,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\views\Palindromes\FormView.vue
+SF:src\views\Palindromes\PalindromesForm.vue
 FNF:0
 FNH:0
 DA:24,2
@@ -177,7 +177,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\views\ShowValues\FormView.vue
+SF:src\views\ShowValues\ShowValuesForm.vue
 FNF:0
 FNH:0
 DA:30,3
@@ -190,7 +190,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\views\Sum\FormView.vue
+SF:src\views\Sum\SumForm.vue
 FNF:0
 FNH:0
 DA:25,2
@@ -203,7 +203,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\views\SumNumericValues\FormView.vue
+SF:src\views\SumNumericValues\SumNumbersForm.vue
 FNF:0
 FNH:0
 DA:31,3

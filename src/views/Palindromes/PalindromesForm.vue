@@ -21,7 +21,7 @@
 
 <script lang="ts">
 
-import ValuesComponent from '@/components/Palindromes/ValuesComponent.vue';
+import ValuesComponent from '@/components/Palindromes/PalindromeValues.vue';
 import ButtonsComponent from '@/bookshopButton/Button.vue';
 import { Component, Vue } from 'vue-property-decorator';
 

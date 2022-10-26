@@ -1,13 +1,15 @@
 import { shallowMount } from "@vue/test-utils";
-import ValuesComponent from '../../HigherToLower/ValuesComponent.vue';
-import FormHigherToLower from '../../../views/HigherToLower/FormView.vue';
+import ValuesComponent from '../../HigherToLower/HigherToLowerValues.vue';
+import FormHigherToLower from '../../../views/HigherToLower/HigherToLowerForm.vue';
 import { getWrapperProps } from "../../../utils/tests.helper";
 
 
 const options = getWrapperProps({
     propsData: {
+        arrayValues: [],
+        showError: false,
         showCurrentsValues: false,
-        sumResult: null
+        errorValue: ""
     }
 });
 
@@ -17,7 +19,9 @@ describe("HigherToLower values SUT", () => {
 
     beforeEach(() => { 
         wrapper = shallowMount(ValuesComponent, {
-            components: FormHigherToLower,
+            components: {
+                FormHigherToLower
+            },
             ...options
         })
     });
@@ -27,16 +31,28 @@ describe("HigherToLower values SUT", () => {
     });
     
     describe('Props', () => {
+        it("Should exist arrayValues property", () => {
+            const arrayValues = wrapper.vm.arrayValues;
+            const mockResult: string[] = [];
+            expect(arrayValues).toEqual(mockResult);
+        });
+
+        it("Should exist showError property", () => {
+            const showError = wrapper.vm.showError;
+            const mockResult = false;
+            expect(showError).toEqual(mockResult);
+        });
+
         it("Should exist showCurrentsValues property", () => {
             const showCurrentsValues = wrapper.vm.showCurrentsValues;
             const mockResult = false;
             expect(showCurrentsValues).toEqual(mockResult);
         });
 
-        it("Should exist sumResult property", () => {
-            const sumResult = wrapper.vm.sumResult;
-            const mockResult = undefined;
-            expect(sumResult).toEqual(mockResult);
+        it("Should exist errorValue property", () => {
+            const errorValue = wrapper.vm.errorValue;
+            const mockResult = "";
+            expect(errorValue).toEqual(mockResult);
         });
     });
 

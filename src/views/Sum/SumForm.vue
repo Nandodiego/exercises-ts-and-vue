@@ -1,23 +1,18 @@
 <template>
     <div>
-        <form class="form">
+        <form class="form" @submit.prevent="addValue(inputValue)">
             <div>
                 <h1 class="form__title">Too easy</h1>
             </div>
             <div class="form__inputDiv">
                 <label class="inputDiv__label">New value</label>
-                <input v-model="inputValue" type="text" class="inputDiv__input">
+                <input v-model="inputValue" type="number" class="inputDiv__input">
             </div>
-            <ButtonsComponent
-                @add-values="addValue(inputValue)"
-                @show-values="showValues(arrayValues)"
-            />
+            <ButtonsComponent/>
             <div v-if="canShow">
                 <ValuesComponent
                     :showCurrentsValues="showCurrentsValues"
-                    :arrayValues="arrayValues"
-                    :showError="showError"
-                    :errorValue="errorValue"
+                    :sumResult="sumResult"
                     @hide-values="hideValues(canShow)"
                 />
             </div>
@@ -27,63 +22,54 @@
 
 <script lang="ts">
 
-import ValuesComponent from '@/components/ShowValues/ValuesComponent.vue';
-import ButtonsComponent from '@/components/ShowValues/ButtonsComponent.vue';
-import { Component, Vue  } from 'vue-property-decorator';
+import ValuesComponent from '@/components/Sum/SumValues.vue';
+import ButtonsComponent from '@/bookshopButton/Button.vue';
+import { Component, Vue } from 'vue-property-decorator';
+
 @Component({
-    name: 'form-vue',
+    name: 'form-component',
     components: {
        ButtonsComponent,
        ValuesComponent
     }
 })
+
 export default class FormComponent extends Vue {
     public canShow = false
-    public showCurrentsValues = false;
-    public showError = false;
-
-    public errorValue = "";
     public inputValue = "";
-
-    public arrayValues: string[] = [];
-
+    public showCurrentsValues = false;
+    public arrayValues: number[] = [];
+    public sumResult = 0;
 
     addValue(data:string): void { 
         if(data){
-            this.showCurrentsValues = true
-            this.arrayValues.push(data);
-            this.showError = false;
-            this.inputValue = ""
+            let conversion = parseInt(data);
+            this.showCurrentsValues = true;
+
+            if(!isNaN(conversion)){
+                this.canShow = true;
+                this.arrayValues.push(conversion);
+                this.sumResult = this.sumNumbers(this.arrayValues);
+                this.inputValue = "";
+            }
         }else{
             this.canShow = true;
-            this.showError = true;
-            this.arrayValues = [];
             this.showCurrentsValues = false;
-            this.errorValue = "Enter a value";
         }
     }
 
-    showValues(array: string[]): void{
-        if(array.length > 0){
-            this.canShow = true;
-            this.inputValue = "";
-        }else{
-            this.showCurrentsValues = false;
-            this.canShow = true;
-            this.showError = true
-            this.arrayValues = [];
-            this.errorValue = "You doesn't have values";
-        }
+    sumNumbers(arrayNumbers: number[]): number {
+        return arrayNumbers.reduce((a, b) => a + b);
     }
 
     hideValues(state: boolean): void{
-        this.canShow = !state
+        this.canShow = !state;
     }
 }
 </script>
 
 
-<style scoped>
+<style>
     .form{
         padding: 32px;
         width: 400px;

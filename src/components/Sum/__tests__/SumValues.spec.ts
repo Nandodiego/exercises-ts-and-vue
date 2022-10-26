@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
-import ValuesComponent from '../ValuesComponent.vue';
-import FormShowValues from '../../../views/Sum/FormView.vue';
+import ValuesComponent from '../SumValues.vue';
+import FormShowValues from '../../../views/Sum/SumForm.vue';
 import { getWrapperProps } from "../../../utils/tests.helper";
 
 
@@ -16,7 +16,9 @@ describe("HigherToLower values SUT", () => {
 
     beforeEach(() => { 
         wrapper = shallowMount(ValuesComponent, {
-            components: FormShowValues,
+            components: {
+                FormShowValues
+            },
             ...options
         })
     });

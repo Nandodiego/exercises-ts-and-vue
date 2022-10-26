@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="78" lines-covered="66" line-rate="0.8461" branches-valid="0" branches-covered="0" branch-rate="1" timestamp="1666718111942" complexity="0" version="0.1">
+<coverage lines-valid="78" lines-covered="66" line-rate="0.8461" branches-valid="0" branches-covered="0" branch-rate="1" timestamp="1666805574768" complexity="0" version="0.1">
   <sources>
     <source>C:\Users\colec\Desktop\Proyectos\project-ts\exercises-ts-and-vue</source>
   </sources>
@@ -11,16 +11,16 @@
           <methods>
           </methods>
           <lines>
-            <line number="10" hits="6" branch="false"/>
-            <line number="17" hits="6" branch="false"/>
-            <line number="24" hits="6" branch="false"/>
+            <line number="10" hits="7" branch="false"/>
+            <line number="17" hits="7" branch="false"/>
+            <line number="24" hits="7" branch="false"/>
           </lines>
         </class>
       </classes>
     </package>
     <package name="components.HigherToLower" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ValuesComponent.vue" filename="src\components\HigherToLower\ValuesComponent.vue" line-rate="1" branch-rate="1">
+        <class name="HigherToLowerValues.vue" filename="src\components\HigherToLower\HigherToLowerValues.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -37,7 +37,7 @@
     </package>
     <package name="components.Palindromes" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ValuesComponent.vue" filename="src\components\Palindromes\ValuesComponent.vue" line-rate="1" branch-rate="1">
+        <class name="PalindromeValues.vue" filename="src\components\Palindromes\PalindromeValues.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -53,7 +53,7 @@
     </package>
     <package name="components.ShowValues" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ButtonsComponent.vue" filename="src\components\ShowValues\ButtonsComponent.vue" line-rate="1" branch-rate="1">
+        <class name="ShowValuesButtons.vue" filename="src\components\ShowValues\ShowValuesButtons.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -63,7 +63,7 @@
             <line number="27" hits="3" branch="false"/>
           </lines>
         </class>
-        <class name="ValuesComponent.vue" filename="src\components\ShowValues\ValuesComponent.vue" line-rate="1" branch-rate="1">
+        <class name="ValuesShowValues.vue" filename="src\components\ShowValues\ValuesShowValues.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -80,7 +80,7 @@
     </package>
     <package name="components.Sum" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ValuesComponent.vue" filename="src\components\Sum\ValuesComponent.vue" line-rate="1" branch-rate="1">
+        <class name="SumValues.vue" filename="src\components\Sum\SumValues.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -95,7 +95,7 @@
     </package>
     <package name="components.SumNumericValues" line-rate="1" branch-rate="1">
       <classes>
-        <class name="ButtonsComponent.vue" filename="src\components\SumNumericValues\ButtonsComponent.vue" line-rate="1" branch-rate="1">
+        <class name="SumNumbersButtons.vue" filename="src\components\SumNumericValues\SumNumbersButtons.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -105,7 +105,7 @@
             <line number="28" hits="3" branch="false"/>
           </lines>
         </class>
-        <class name="ValuesComponent.vue" filename="src\components\SumNumericValues\ValuesComponent.vue" line-rate="1" branch-rate="1">
+        <class name="SumNumbersValues.vue" filename="src\components\SumNumericValues\SumNumbersValues.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -146,9 +146,9 @@
       <classes>
         <class name="tests.helper.ts" filename="src\utils\tests.helper.ts" line-rate="0.6666" branch-rate="1">
           <methods>
-            <method name="getWrapperProps" hits="10" signature="()V">
+            <method name="getWrapperProps" hits="11" signature="()V">
               <lines>
-                <line number="3" hits="10"/>
+                <line number="3" hits="11"/>
               </lines>
             </method>
             <method name="(anonymous_1)" hits="0" signature="()V">
@@ -158,8 +158,8 @@
             </method>
           </methods>
           <lines>
-            <line number="3" hits="10" branch="false"/>
-            <line number="4" hits="10" branch="false"/>
+            <line number="3" hits="11" branch="false"/>
+            <line number="4" hits="11" branch="false"/>
             <line number="7" hits="0" branch="false"/>
           </lines>
         </class>
@@ -167,7 +167,7 @@
     </package>
     <package name="views.HigherToLower" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\HigherToLower\FormView.vue" line-rate="1" branch-rate="1">
+        <class name="HigherToLowerForm.vue" filename="src\views\HigherToLower\HigherToLowerForm.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -181,7 +181,7 @@
     </package>
     <package name="views.Palindromes" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\Palindromes\FormView.vue" line-rate="1" branch-rate="1">
+        <class name="PalindromesForm.vue" filename="src\views\Palindromes\PalindromesForm.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -195,7 +195,7 @@
     </package>
     <package name="views.ShowValues" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\ShowValues\FormView.vue" line-rate="1" branch-rate="1">
+        <class name="ShowValuesForm.vue" filename="src\views\ShowValues\ShowValuesForm.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -209,7 +209,7 @@
     </package>
     <package name="views.Sum" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\Sum\FormView.vue" line-rate="1" branch-rate="1">
+        <class name="SumForm.vue" filename="src\views\Sum\SumForm.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
@@ -223,7 +223,7 @@
     </package>
     <package name="views.SumNumericValues" line-rate="1" branch-rate="1">
       <classes>
-        <class name="FormView.vue" filename="src\views\SumNumericValues\FormView.vue" line-rate="1" branch-rate="1">
+        <class name="SumNumbersForm.vue" filename="src\views\SumNumericValues\SumNumbersForm.vue" line-rate="1" branch-rate="1">
           <methods>
           </methods>
           <lines>
